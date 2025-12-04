@@ -6,7 +6,7 @@
 // Initialize Reveal.js
 Reveal.initialize({
     // Display controls in the bottom right corner
-    controls: true,
+    controls: false,
     
     // Display a presentation progress bar
     progress: false, // We use custom progress bar

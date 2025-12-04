@@ -1092,6 +1092,77 @@
     animation: none;
 }
 
+/* ===== WORK PACKAGE STYLES ===== */
+.three-column-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    margin: var(--space-xl) auto;
+    max-width: 1400px;
+    padding: 0 var(--space-md);
+}
+
+.three-column-grid .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.three-column-grid .card-body {
+    flex: 1;
+}
+
+.wp-details {
+    text-align: left;
+    margin-top: var(--space-sm);
+}
+
+.wp-details p {
+    font-size: 22px;
+    margin: var(--space-xs) 0;
+    line-height: 1.4;
+}
+
+.wp-details strong {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.wp-details ul {
+    margin: var(--space-xs) 0;
+    padding-left: var(--space-md);
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.status-badge.complete {
+    background-color: #D1FAE5;
+    color: var(--success);
+}
+
+.status-badge.progress {
+    background-color: #FEF3C7;
+    color: var(--warning);
+}
+
+.status-badge.upcoming {
+    background-color: var(--light-gray);
+    color: var(--medium-gray);
+}
+
+.status-badge i {
+    font-size: 18px;
+}
+
 /* ===== PRINT STYLES ===== */
 @media print {
     .progress-bar-container {

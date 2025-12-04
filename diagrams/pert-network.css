@@ -1,0 +1,369 @@
+/**
+ * PERT Network Diagram Styles
+ * Klasik Plus ERP Project
+ * Matches Presentation Blue Theme
+ */
+
+/* ===== VARIABLES ===== */
+:root {
+    /* Presentation Colors */
+    --primary-blue: #1E3A8A;
+    --light-blue: #3B82F6;
+    --sky-blue: #60A5FA;
+    --deep-blue: #1E293B;
+    --powder-blue: #DBEAFE;
+
+    /* Status Colors */
+    --critical-red: #EF4444;
+    --critical-light: #FEE2E2;
+    --success: #10B981;
+    --warning: #F59E0B;
+
+    /* Neutrals */
+    --white: #FFFFFF;
+    --light-gray: #F8FAFC;
+    --medium-gray: #64748B;
+    --dark-gray: #334155;
+    --black: #000000;
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;
+    background: var(--light-gray);
+    padding: 40px 20px;
+    color: var(--dark-gray);
+}
+
+.pert-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== HEADER ===== */
+.diagram-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--deep-blue);
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+}
+
+.diagram-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--medium-gray);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ===== LEGEND ===== */
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--powder-blue);
+    border-radius: 8px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.legend-box {
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid var(--dark-gray);
+}
+
+.legend-box.critical {
+    background: var(--critical-light);
+    border-color: var(--critical-red);
+}
+
+.legend-box.non-critical {
+    background: #EFF6FF;
+    border-color: var(--light-blue);
+}
+
+.legend-box.milestone {
+    background: var(--powder-blue);
+    border-color: var(--primary-blue);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* ===== SVG DIAGRAM ===== */
+.pert-diagram {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: var(--white);
+    border: 2px solid var(--powder-blue);
+    border-radius: 8px;
+}
+
+/* ===== TASK BOXES ===== */
+.task-box {
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.task-box.critical {
+    fill: var(--critical-light);
+    stroke: var(--critical-red);
+}
+
+.task-box.non-critical {
+    fill: #EFF6FF;
+    stroke: var(--light-blue);
+}
+
+.task-box:hover {
+    filter: brightness(0.95);
+    stroke-width: 3;
+    cursor: pointer;
+}
+
+/* ===== MILESTONE BOXES ===== */
+.milestone-box {
+    fill: var(--powder-blue);
+    stroke: var(--primary-blue);
+    stroke-width: 2.5;
+    transition: all 0.3s ease;
+}
+
+.milestone-box.critical {
+    fill: var(--critical-light);
+    stroke: var(--critical-red);
+}
+
+.milestone-box:hover {
+    filter: brightness(0.92);
+    stroke-width: 3.5;
+    cursor: pointer;
+}
+
+/* ===== TEXT STYLES ===== */
+.task-name {
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 14px;
+    font-weight: 700;
+    fill: var(--deep-blue);
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.task-details {
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 11px;
+    font-weight: 400;
+    fill: var(--dark-gray);
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.task-id {
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 11px;
+    font-weight: 600;
+    fill: var(--primary-blue);
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.task-resource {
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 10px;
+    font-weight: 400;
+    fill: var(--medium-gray);
+    font-style: italic;
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.milestone-name {
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 13px;
+    font-weight: 700;
+    fill: var(--primary-blue);
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.milestone-date {
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 11px;
+    font-weight: 600;
+    fill: var(--dark-gray);
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.critical-path-label {
+    font-family: 'Cambria', 'Georgia', serif;
+    font-size: 18px;
+    font-weight: 700;
+    fill: var(--critical-red);
+}
+
+/* ===== ARROWS ===== */
+.arrow {
+    stroke-width: 2;
+    fill: none;
+    transition: all 0.3s ease;
+}
+
+.critical-arrow {
+    stroke: var(--critical-red);
+    stroke-width: 2.5;
+}
+
+.normal-arrow {
+    stroke: var(--light-blue);
+    stroke-width: 2;
+}
+
+.arrow:hover {
+    stroke-width: 3;
+    opacity: 0.8;
+}
+
+/* ===== PHASE GROUPS ===== */
+.phase-group {
+    transition: opacity 0.3s ease;
+}
+
+.phase-group:hover {
+    opacity: 1;
+}
+
+.milestone-group {
+    transition: all 0.3s ease;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1400px) {
+    .pert-container {
+        padding: 30px;
+    }
+
+    .diagram-title {
+        font-size: 38px;
+    }
+
+    .diagram-subtitle {
+        font-size: 20px;
+    }
+
+    .legend {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .pert-container {
+        padding: 20px;
+    }
+
+    .diagram-title {
+        font-size: 28px;
+    }
+
+    .diagram-subtitle {
+        font-size: 16px;
+    }
+
+    .legend {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .legend-item {
+        font-size: 16px;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .pert-container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .pert-diagram {
+        border: 1px solid #ccc;
+    }
+}
+
+/* ===== ACCESSIBILITY ===== */
+.task-box:focus,
+.milestone-box:focus {
+    outline: 3px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pert-container {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* ===== HOVER EFFECTS ===== */
+.phase-group:hover .task-box {
+    filter: brightness(1.05);
+}
+
+.milestone-group:hover .milestone-box {
+    filter: brightness(1.05);
+    transform: scale(1.02);
+    transform-origin: center;
+}

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasik Plus ERP System - Project Management Presentation</title>
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom-theme.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar-fill"></div>
+    </div>
+
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- SLIDE 1: Title Slide -->
+            <section class="title-slide" data-background-gradient="linear-gradient(180deg, #FFFFFF 0%, #DBEAFE 100%)">
+                <div class="logo-container-top">
+                    <img src="assets/logos/dsd-erp-logo.png" alt="DSD ERP Logo" class="logo-large">
+                </div>
+                
+                <h1 class="main-title">Klasik Plus ERP System</h1>
+                <h3 class="subtitle">Project Management Presentation</h3>
+                
+                <p class="creators">Danilo Vračar, Danilo Rogić, Sergey Popov</p>
+                
+
+                
+                <p class="date-location">December 2025, Brno</p>
+            </section>
+
+            <!-- SLIDE 2: Project Overview -->
+            <section>
+                <h1>Project Overview</h1>
+                <h3 class="section-subtitle">Project at a Glance</h3>
+                
+                <div class="two-column-layout">
+                    <div class="column">
+                        <ul class="key-info-list">
+                            <li><i class="fas fa-building"></i> <strong>Client: </strong> Klasik Plus (Czech retail - livestock & food)</li>
+                            <li><i class="fas fa-calendar-alt"></i> <strong>Duration: </strong> 70 working days (Oct 2 - Jan 7, 2026)</li>
+                            <li><i class="fas fa-euro-sign"></i> <strong>Budget: </strong> €38,731 + €5,532 reserve = €42,412 total</li>
+                            <li><i class="fas fa-users"></i> <strong>Team: </strong> 14 members across 5 departments</li>
+                            <li><i class="fas fa-tasks"></i> <strong>Status: </strong> 4 of 7 phases complete</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <div class="info-box">
+                            <h4>Core Objective</h4>
+                            <p>Modernize operations with unified ERP platform integrating purchasing, inventory management, and accounting</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: Three Core ERP Modules -->
+            <section>
+                <h1>Three Core ERP Modules</h1>
+                <h3 class="section-subtitle">System Architecture</h3>
+                
+                <div class="three-column-layout">
+                    <div class="module-card">
+                        <div class="module-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4>Purchasing Module</h4>
+                        <ul>
+                            <li>Automated supplier catalog</li>
+                            <li>Purchase order processing</li>
+                            <li>Invoice & payment workflows</li>
+                            <li>Supplier system integration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="module-card">
+                        <div class="module-icon">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <h4>Inventory Management</h4>
+                        <ul>
+                            <li>Real-time stock tracking</li>
+                            <li>Automated pricing</li>
+                            <li>Warehouse operations</li>
+                            <li>Multi-location visibility</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="module-card">
+                        <div class="module-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Accounting Module</h4>
+                        <ul>
+                            <li>Automated ledger posting</li>
+                            <li>Financial transactions</li>
+                            <li>Local tax compliance</li>
+                            <li>Reporting & analytics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="integration-note">
+                    <p><i class="fas fa-link"></i> Seamless data flow between all modules</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: Team Organization Structure -->
+            <section>
+                <h1>Team Organization Structure</h1>
+                <h3 class="section-subtitle">14-Member Functional Organization</h3>
+                
+                <div class="org-structure">
+                    <div class="department-grid">
+                        <div class="department-card" data-color="green">
+                            <div class="dept-header">
+                                <i class="fas fa-search"></i>
+                                <h4>Analysis (2)</h4>
+                            </div>
+                            <ul>
+                                <li>Business Analyst</li>
+                                <li>System Analyst</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="department-card" data-color="blue">
+                            <div class="dept-header">
+                                <i class="fas fa-drafting-compass"></i>
+                                <h4>Architecture & Design (3)</h4>
+                            </div>
+                            <ul>
+                                <li>Software Architect</li>
+                                <li>Database Specialist</li>
+                                <li>UX/UI Designer</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="department-card" data-color="red">
+                            <div class="dept-header">
+                                <i class="fas fa-code"></i>
+                                <h4>Development (4)</h4>
+                            </div>
+                            <ul>
+                                <li>DevOps/Administrator</li>
+                                <li>Software Developers (3)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="department-card" data-color="purple">
+                            <div class="dept-header">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Quality & Compliance (2)</h4>
+                            </div>
+                            <ul>
+                                <li>Tester</li>
+                                <li>Security/GDPR Specialist</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="department-card" data-color="gray">
+                            <div class="dept-header">
+                                <i class="fas fa-life-ring"></i>
+                                <h4>Support & Documentation (2)</h4>
+                            </div>
+                            <ul>
+                                <li>Training Specialist</li>
+                                <li>Documentation Specialist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="raci-note"><strong>RACI Matrix:</strong> 15 critical tasks with clear accountability assignments</p>
+            </section>
+
+            <!-- SLIDE 5: Work Breakdown Structure -->
+            <section>
+                <h1>Work Breakdown Structure</h1>
+                <h3 class="section-subtitle">7 Phases, 44 Tasks, 1,288 Hours</h3>
+                
+                <div class="wbs-table-container">
+                    <table class="wbs-table">
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>Duration</th>
+                                <th>Tasks</th>
+                                <th>Hours</th>
+                                <th>Budget</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Initiation</td>
+                                <td>Oct 2-10</td>
+                                <td>8</td>
+                                <td>128</td>
+                                <td>€3,120</td>
+                                <td class="status-complete"><i class="fas fa-check-circle"></i> Complete</td>
+                            </tr>
+                            <tr>
+                                <td>2. Planning</td>
+                                <td>Oct 13-20</td>
+                                <td>8</td>
+                                <td>104</td>
+                                <td>€2,656</td>
+                                <td class="status-complete"><i class="fas fa-check-circle"></i> Complete</td>
+                            </tr>
+                            <tr>
+                                <td>3. Design</td>
+                                <td>Oct 21-Nov 3</td>
+                                <td>5</td>
+                                <td>336</td>
+                                <td>€8,015</td>
+                                <td class="status-complete"><i class="fas fa-check-circle"></i> Complete</td>
+                            </tr>
+                            <tr>
+                                <td>4. Development</td>
+                                <td>Nov 4-Dec 2</td>
+                                <td>8</td>
+                                <td>672</td>
+                                <td>€16,772</td>
+                                <td class="status-complete"><i class="fas fa-check-circle"></i> Complete</td>
+                            </tr>
+                            <tr>
+                                <td>5. Implementation</td>
+                                <td>Dec 3-16</td>
+                                <td>5</td>
+                                <td>96</td>
+                                <td>€3,432</td>
+                                <td class="status-progress"><i class="fas fa-spinner"></i> In Progress</td>
+                            </tr>
+                            <tr>
+                                <td>6. Testing & Control</td>
+                                <td>Dec 17-26</td>
+                                <td>6</td>
+                                <td>144</td>
+                                <td>€3,168</td>
+                                <td class="status-upcoming"><i class="fas fa-clock"></i> Upcoming</td>
+                            </tr>
+                            <tr>
+                                <td>7. Closure</td>
+                                <td>Dec 29-Jan 7</td>
+                                <td>4</td>
+                                <td>80</td>
+                                <td>€1,568</td>
+                                <td class="status-upcoming"><i class="fas fa-clock"></i> Upcoming</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="note">Development phase accounts for 43% of total budget</p>
+            </section>
+
+            <!-- SECTION DIVIDER: Schedule Management -->
+            <section class="section-divider" data-background-gradient="linear-gradient(135deg, #DBEAFE 0%, #FFFFFF 100%)">
+                <div class="divider-content">
+                    <i class="fas fa-project-diagram divider-icon"></i>
+                    <h1>Schedule Management</h1>
+                    <p>Critical Path & PERT Analysis</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: Critical Path & PERT Analysis -->
+            <section>
+                <h1>Critical Path & PERT Analysis</h1>
+                <h3 class="section-subtitle">Schedule Management</h3>
+                
+                <div class="two-column-layout">
+                    <div class="column">
+                        <div class="info-box">
+                            <h4><i class="fas fa-route"></i> Critical Path Method (CPM)</h4>
+                            <ul>
+                                <li><strong>Duration:</strong> 70 working days</li>
+                                <li><strong>Critical Tasks:</strong> 30 out of 44 (68%)</li>
+                                <li><strong>Zero Slack:</strong> Any delay impacts completion</li>
+                                <li><strong>100% Critical Phases:</strong> Design, Implementation, Closure</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="info-box">
+                            <h4><i class="fas fa-chart-line"></i> PERT Three-Point Estimation</h4>
+                            <ul>
+                                <li><strong>Expected Duration:</strong> 84 days</li>
+                                <li><strong>Standard Deviation:</strong> 2.85 days</li>
+                                <li><strong>Confidence Levels:</strong>
+                                    <ul>
+                                        <li>84 days: 50% confidence</li>
+                                        <li>87 days (+3): 85% confidence</li>
+                                        <li>90 days (+6): 98% confidence</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pert-diagram-container" style="animation: fadeInUp 0.8s ease-out;">
+                    <img src="assets/diagrams/Network_Chart.png" alt="PERT Network Diagram - Critical Path Analysis" style="width: 100%; max-width: 1400px; height: auto; margin: 20px auto; display: block; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                </div>
+            </section>
+
+            <!-- SECTION DIVIDER: Budget Management -->
+            <section class="section-divider" data-background-gradient="linear-gradient(135deg, #DBEAFE 0%, #FFFFFF 100%)">
+                <div class="divider-content">
+                    <i class="fas fa-euro-sign divider-icon"></i>
+                    <h1>Budget Management</h1>
+                    <p>Financial Overview & Performance</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: Budget Management -->
+            <section>
+                <h1>Budget Management</h1>
+                <h3 class="section-subtitle">Financial Overview: €42,412 Authorized</h3>
+                
+                <div class="two-column-layout">
+                    <div class="column">
+                        <div class="budget-breakdown">
+                            <h4>Budget Breakdown</h4>
+                            <div class="budget-item">
+                                <span class="budget-label">Labor Costs</span>
+                                <span class="budget-value">€36,880 <span class="percentage">(95.2%)</span></span>
+                            </div>
+                            <div class="budget-item">
+                                <span class="budget-label">External Services</span>
+                                <span class="budget-value">€1,851 <span class="percentage">(4.8%)</span></span>
+                            </div>
+                            <div class="budget-item highlight">
+                                <span class="budget-label"><strong>Reserve Remaining</strong></span>
+                                <span class="budget-value"><strong>€5,532</strong></span>
+                            </div>
+                        </div>
+                        
+                        <div class="external-services">
+                            <h4>External Services</h4>
+                            <ul class="compact-list">
+                                <li>Figma Pro: €15</li>
+                                <li>Email API: €420</li>
+                                <li>Hosting + Domain: €1,416</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="variance-section">
+                            <h4>Phase Performance (Completed)</h4>
+                            <div class="variance-bar" data-variance="0">
+                                <div class="phase-name">Initiation</div>
+                                <div class="variance-indicator on-budget">€3,120 (On budget)</div>
+                            </div>
+                            <div class="variance-bar" data-variance="positive">
+                                <div class="phase-name">Planning</div>
+                                <div class="variance-indicator over">€2,878 (+8.4%)</div>
+                            </div>
+                            <div class="variance-bar" data-variance="positive">
+                                <div class="phase-name">Design</div>
+                                <div class="variance-indicator over">€9,296 (+16.0%)</div>
+                            </div>
+                            <div class="variance-bar" data-variance="positive">
+                                <div class="phase-name">Development</div>
+                                <div class="variance-indicator over">€18,322 (+9.2%)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="total-variance">
+                            <strong>Total Variance:</strong> +€3,053.50 (+8.6%)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION DIVIDER: Risk Management -->
+            <section class="section-divider" data-background-gradient="linear-gradient(135deg, #DBEAFE 0%, #FFFFFF 100%)">
+                <div class="divider-content">
+                    <i class="fas fa-exclamation-triangle divider-icon"></i>
+                    <h1>Risk Management</h1>
+                    <p>Identification, Assessment & Mitigation</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: Risk Management Overview -->
+            <section>
+                <h1>Risk Management Overview</h1>
+                <h3 class="section-subtitle">12 Identified Risks Across 6 Categories</h3>
+                
+                <div class="risk-overview">
+                    <div class="risk-distribution">
+                        <div class="risk-priority high">
+                            <div class="priority-icon">🔴</div>
+                            <div class="priority-label">HIGH Priority</div>
+                            <div class="priority-count">1 risk (8.3%)</div>
+                        </div>
+                        <div class="risk-priority medium">
+                            <div class="priority-icon">🟡</div>
+                            <div class="priority-label">MEDIUM Priority</div>
+                            <div class="priority-count">10 risks (83.3%)</div>
+                        </div>
+                        <div class="risk-priority low">
+                            <div class="priority-icon">🟢</div>
+                            <div class="priority-label">LOW Priority</div>
+                            <div class="priority-count">1 risk (8.3%)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="risk-categories">
+                        <h4>Risk Categories</h4>
+                        <div class="categories-grid">
+                            <div class="category-item">1. Project Management</div>
+                            <div class="category-item">2. System Architecture & Integration</div>
+                            <div class="category-item">3. UI/UX Design & Implementation</div>
+                            <div class="category-item">4. Development of ERP Modules</div>
+                            <div class="category-item">5. Testing & Quality Assurance</div>
+                            <div class="category-item">6. Deployment, Training & Support</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="assessment-framework">
+                    <p><strong>Assessment Framework:</strong> Impact Scale (0-11) × Likelihood Scale (0-11)</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: Critical HIGH Priority Risk -->
+            <section>
+                <h1>Critical HIGH Priority Risk</h1>
+                <div class="risk-header">
+                    <h3>Risk #5: Misread User Needs or Usability Goals</h3>
+                    <div class="risk-scores">
+                        <span class="score-badge impact">Impact: <strong>9/11</strong></span>
+                        <span class="score-badge likelihood">Likelihood: <strong>10/11</strong></span>
+                        <span class="score-badge priority high">Priority: <strong>HIGH</strong></span>
+                    </div>
+                </div>
+                
+                <div class="two-column-layout">
+                    <div class="column">
+                        <div class="why-matters">
+                            <h4>Why This Matters</h4>
+                            <p>System fails to align with actual workflows → Low adoption → Extensive rework → Potential project failure</p>
+                        </div>
+                        
+                        <div class="root-causes">
+                            <h4>16 Root Causes Identified</h4>
+                            <ul class="compact-list">
+                                <li><strong>Data:</strong> Incomplete user context, no workflow data</li>
+                                <li><strong>Team:</strong> Assumptions without validation</li>
+                                <li><strong>Methods:</strong> Requirements from stakeholders only</li>
+                                <li><strong>Communication:</strong> Feedback not documented</li>
+                                <li><strong>Environment:</strong> Time pressure, culture</li>
+                                <li><strong>Resources:</strong> Limited research budget</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="mitigation-strategy">
+                            <h4>Mitigation Strategy</h4>
+                            <ul class="checklist">
+                                <li><i class="fas fa-check"></i> Comprehensive user research & interviews</li>
+                                <li><i class="fas fa-check"></i> Usability testing on prototypes</li>
+                                <li><i class="fas fa-check"></i> Continuous feedback loops</li>
+                                <li><i class="fas fa-check"></i> Clear acceptance criteria</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 10: Fishbone Diagram - Root Cause Analysis -->
+            <section>
+                <h1>Root Cause Analysis</h1>
+                <h3 class="section-subtitle">Fishbone Diagram: Misread User Needs</h3>
+
+                <div class="fishbone-diagram-container" style="display: flex; justify-content: center; align-items: center; padding: 40px 20px;">
+                    <img src="assets/diagrams/FISHBONE-DIAGRAM.PNG" alt="Fishbone Diagram - Root Cause Analysis" style="width: 90%; max-width: 1200px; height: auto; display: block; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                </div>
+            </section>
+
+            <!-- SLIDE 11: Top Medium Priority Risks -->
+            <section>
+                <h1>Top Medium Priority Risks</h1>
+                <h3 class="section-subtitle">Key Risks Requiring Active Management</h3>
+                
+                <div class="risk-table-container">
+                    <table class="risk-table">
+                        <thead>
+                            <tr>
+                                <th>Risk</th>
+                                <th>Impact</th>
+                                <th>Likelihood</th>
+                                <th>Mitigation Focus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Inadequate Training</td>
+                                <td>4</td>
+                                <td class="high-likelihood"><strong>11</strong></td>
+                                <td>Comprehensive documentation, role-specific training</td>
+                            </tr>
+                            <tr>
+                                <td>Unrealistic Timelines</td>
+                                <td>1</td>
+                                <td>9</td>
+                                <td>Historical data, 20% buffer, daily tracking</td>
+                            </tr>
+                            <tr>
+                                <td>Data Corruption</td>
+                                <td class="high-impact"><strong>11</strong></td>
+                                <td>0</td>
+                                <td>Automated backups, ACID compliance</td>
+                            </tr>
+                            <tr>
+                                <td>Weak Authentication</td>
+                                <td>10</td>
+                                <td>1</td>
+                                <td>Multi-factor auth, secure tokens</td>
+                            </tr>
+                            <tr>
+                                <td>Data Sync Failures</td>
+                                <td>7</td>
+                                <td>4</td>
+                                <td>Integration testing, API versioning</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="framework-note">
+                    <h4>Risk Management Framework</h4>
+                    <p>Weekly reviews • Phase gate assessments • Monthly stakeholder reporting • Immediate action triggers</p>
+                </div>
+            </section>
+
+            <!-- SECTION DIVIDER: Market Position -->
+            <section class="section-divider" data-background-gradient="linear-gradient(135deg, #DBEAFE 0%, #FFFFFF 100%)">
+                <div class="divider-content">
+                    <i class="fas fa-chart-bar divider-icon"></i>
+                    <h1>Market Position</h1>
+                    <p>Competitive Analysis</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 11: Competitive Positioning -->
+            <section>
+                <h1>Competitive Positioning</h1>
+                <h3 class="section-subtitle">DSD ERP vs. Market Competitors</h3>
+                
+                <div class="competitive-table-container">
+                    <table class="competitive-table">
+                        <thead>
+                            <tr>
+                                <th>Competitor</th>
+                                <th>Geography</th>
+                                <th>Customers</th>
+                                <th>Best For</th>
+                                <th>Pricing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Relex</strong> (Finland)</td>
+                                <td>20+ countries</td>
+                                <td>500+</td>
+                                <td>Medium-Enterprise</td>
+                                <td>€50K</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CSB</strong> (Germany)</td>
+                                <td>50+ countries</td>
+                                <td>1,200+</td>
+                                <td>Enterprise</td>
+                                <td>€100K</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AgriERP</strong> (USA)</td>
+                                <td>Worldwide</td>
+                                <td>300+</td>
+                                <td>Micro-Small</td>
+                                <td>€300/user</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>DSD ERP</strong> (Czech)</td>
+                                <td>Central Europe</td>
+                                <td>Growing</td>
+                                <td><strong>Micro-Small</strong></td>
+                                <td><strong>€12K</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="competitive-advantages">
+                    <h4>Competitive Advantages</h4>
+                    <div class="advantages-grid">
+                        <div class="advantage-item"><i class="fas fa-check-circle"></i> Excellent fit for Micro/Small businesses</div>
+                        <div class="advantage-item"><i class="fas fa-check-circle"></i> Mid-market pricing with HIGH customizability</div>
+                        <div class="advantage-item"><i class="fas fa-check-circle"></i> Central European market focus</div>
+                        <div class="advantage-item"><i class="fas fa-check-circle"></i> Modern Java architecture on AWS</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: Current Project Status -->
+            <section>
+                <h1>Current Project Status</h1>
+                <h3 class="section-subtitle">Phase Completion: 4 of 7 Complete</h3>
+                
+                <div class="status-timeline">
+                    <div class="timeline-item complete">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-label">Initiation</div>
+                    </div>
+                    <div class="timeline-item complete">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-label">Planning</div>
+                    </div>
+                    <div class="timeline-item complete">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-label">Design</div>
+                    </div>
+                    <div class="timeline-item complete">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-label">Development</div>
+                    </div>
+                    <div class="timeline-item current">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-label">Implementation</div>
+                    </div>
+                    <div class="timeline-item upcoming">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-label">Testing</div>
+                    </div>
+                    <div class="timeline-item upcoming">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-label">Closure</div>
+                    </div>
+                </div>
+                
+                <div class="two-column-layout">
+                    <div class="column">
+                        <div class="deliverables-section">
+                            <h4>Key Deliverables Ready</h4>
+                            <ul class="checklist">
+                                <li><i class="fas fa-check-circle"></i> Functional web-based ERP system</li>
+                                <li><i class="fas fa-check-circle"></i> Wireframes & design docs</li>
+                                <li><i class="fas fa-check-circle"></i> Technical architecture</li>
+                                <li><i class="fas fa-spinner"></i> Training materials (in dev)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="success-criteria">
+                            <h4>Success Criteria Status</h4>
+                            <ul class="status-list">
+                                <li><span class="status-icon complete"><i class="fas fa-check-circle"></i></span> Three modules integrated</li>
+                                <li><span class="status-icon progress"><i class="fas fa-spinner"></i></span> Requirements validation</li>
+                                <li><span class="status-icon upcoming"><i class="fas fa-clock"></i></span> User acceptance testing</li>
+                                <li><span class="status-icon progress"><i class="fas fa-spinner"></i></span> User training</li>
+                                <li><span class="status-icon complete"><i class="fas fa-check-circle"></i></span> Timeline adherence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 13: Key Success Metrics -->
+            <section>
+                <h1>Key Success Metrics</h1>
+                <h3 class="section-subtitle">Project Performance Dashboard</h3>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="metric-value">44</div>
+                        <div class="metric-label">Total Tasks</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-users"></i></div>
+                        <div class="metric-value">14</div>
+                        <div class="metric-label">Team Members</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-calendar-day"></i></div>
+                        <div class="metric-value">70</div>
+                        <div class="metric-label">Working Days</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-euro-sign"></i></div>
+                        <div class="metric-value">€42K</div>
+                        <div class="metric-label">Total Budget</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-route"></i></div>
+                        <div class="metric-value">70</div>
+                        <div class="metric-label">Critical Path (days)</div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="metric-value">12</div>
+                        <div class="metric-label">Managed Risks</div>
+                    </div>
+                </div>
+                
+                <div class="performance-summary">
+                    <div class="summary-item">
+                        <strong>Schedule Performance:</strong> 98% confidence at +6 days buffer
+                    </div>
+                    <div class="summary-item">
+                        <strong>Budget Performance:</strong> +8.6% variance, €5,532 reserve available
+                    </div>
+                    <div class="summary-item">
+                        <strong>Risk Profile:</strong> 1 HIGH, 10 MEDIUM priorities actively managed
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 14: Conclusion & Next Steps -->
+            <section>
+                <h1>Conclusion & Next Steps</h1>
+                <h3 class="section-subtitle">Project Outlook: On Track for Success</h3>
+                
+                <div class="two-column-layout">
+                    <div class="column">
+                        <div class="achievements">
+                            <h4>Achievements to Date</h4>
+                            <ul class="checklist">
+                                <li><i class="fas fa-check"></i> Comprehensive planning with CPM/PERT</li>
+                                <li><i class="fas fa-check"></i> Transparent risk assessment</li>
+                                <li><i class="fas fa-check"></i> Four phases completed successfully</li>
+                                <li><i class="fas fa-check"></i> Functional ERP system integrated</li>
+                                <li><i class="fas fa-check"></i> Strong competitive positioning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="next-steps">
+                            <h4>Immediate Next Steps (Dec 17-26)</h4>
+                            <ol class="steps-list">
+                                <li>Complete Implementation phase</li>
+                                <li>Execute comprehensive Testing</li>
+                                <li>User Acceptance Testing with stakeholders</li>
+                                <li>System optimization and bug fixes</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="completion-path">
+                            <h4>Path to Completion (by Jan 7, 2026)</h4>
+                            <ul class="compact-list">
+                                <li>Project Closure phase</li>
+                                <li>Lessons learned documentation</li>
+                                <li>Final project report</li>
+                                <li>Support handoff</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="key-takeaway">
+                    <p><strong>Key Takeaway:</strong> Disciplined project management + comprehensive planning + proactive risk mitigation = Successful ERP transformation</p>
+                </div>
+            </section>
+
+            <!-- SLIDE 15: Q&A / Thank You -->
+            <section class="final-slide">
+                <h1>Questions & Discussion</h1>
+                
+                <div class="contact-section">
+                    <h4>Project Contacts</h4>
+                    <div class="contacts-grid">
+                        <div class="contact-item">
+                            <strong>Danilo Vračar</strong><br>
+                            Project Manager
+                        </div>
+                        <div class="contact-item">
+                            <strong>Danilo Rogić</strong><br>
+                            Project Supervision
+                        </div>
+                        <div class="contact-item">
+                            <strong>Sergey Popov</strong><br>
+                            System Analyst
+                        </div>
+                    </div>
+                    
+                    <p class="location-info">Brno, Czech Republic • Project ID: KPERP v1.0.1</p>
+                </div>
+                
+                <div class="thank-you">
+                    <h2>Thank you for your attention!</h2>
+                </div>
+                
+                <div class="footer-logos">
+                    <img src="assets/logos/dsd-erp-logo.png" alt="DSD ERP" class="footer-logo">
+                    <img src="assets/logos/klasik-plus-logo.png" alt="Klasik Plus" class="footer-logo">
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
+</body>
+</html>

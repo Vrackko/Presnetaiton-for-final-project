@@ -1,0 +1,342 @@
+/**
+ * Klasik Plus ERP Custom Theme for Reveal.js
+ * Modern Professional Academic Style
+ * Blue Color Palette with Cambria Typography
+ */
+
+/* ===== THEME SETUP ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cambria:wght@400;600;700&display=swap');
+
+:root {
+    /* Primary Blues */
+    --primary-blue: #1E3A8A;
+    --light-blue: #3B82F6;
+    --sky-blue: #60A5FA;
+    --deep-blue: #1E293B;
+    --powder-blue: #DBEAFE;
+    
+    /* Neutrals */
+    --white: #FFFFFF;
+    --light-gray: #F8FAFC;
+    --medium-gray: #64748B;
+    --dark-gray: #334155;
+    --black: #000000;
+    
+    /* Status Colors */
+    --success: #10B981;
+    --warning: #F59E0B;
+    --alert: #EF4444;
+    
+    /* Typography Sizes */
+    --h1-size: 60px;
+    --h2-size: 48px;
+    --h3-size: 36px;
+    --body-size: 28px;
+    --small-size: 22px;
+    --large-number: 72px;
+    --inline-number: 32px;
+    
+    /* Spacing */
+    --space-xs: 12px;
+    --space-sm: 20px;
+    --space-md: 30px;
+    --space-lg: 40px;
+    --space-xl: 60px;
+    --space-xxl: 80px;
+}
+
+/* ===== GLOBAL REVEAL.JS OVERRIDES ===== */
+.reveal {
+    font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;
+    font-size: var(--body-size);
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal .slides > section {
+    padding: var(--space-xxl);
+    height: 100%;
+}
+
+/* ===== TYPOGRAPHY ===== */
+.reveal h1 {
+    font-size: var(--h1-size);
+    font-weight: 700;
+    color: var(--deep-blue);
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.reveal h2 {
+    font-size: var(--h2-size);
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: var(--space-md);
+    line-height: 1.3;
+}
+
+.reveal h3 {
+    font-size: var(--h3-size);
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: var(--space-sm);
+    line-height: 1.3;
+}
+
+.reveal h4 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: var(--space-sm);
+}
+
+.reveal p {
+    margin-bottom: var(--space-sm);
+    line-height: 1.6;
+}
+
+.reveal .section-subtitle {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--medium-gray);
+    text-align: center;
+    margin-top: calc(var(--space-sm) * -1);
+    margin-bottom: var(--space-xl);
+}
+
+/* ===== BACKGROUND STYLES ===== */
+.reveal {
+    background: var(--white);
+}
+
+.reveal .slides section {
+    background: var(--white);
+}
+
+.reveal .slides section.section-divider {
+    background: linear-gradient(135deg, var(--powder-blue) 0%, var(--white) 100%);
+}
+
+.reveal .slides section.title-slide {
+    background: linear-gradient(180deg, var(--white) 0%, var(--powder-blue) 100%);
+}
+
+/* ===== LISTS ===== */
+.reveal ul,
+.reveal ol {
+    margin: 0 0 var(--space-sm) 0;
+    list-style-position: outside;
+}
+
+.reveal ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.reveal ul li {
+    margin-bottom: var(--space-xs);
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.reveal ul li::before {
+    content: "•";
+    color: var(--light-blue);
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+}
+
+.reveal ol {
+    counter-reset: item;
+    padding-left: var(--space-lg);
+}
+
+.reveal ol li {
+    margin-bottom: var(--space-xs);
+}
+
+/* ===== TABLES ===== */
+.reveal table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-md) 0;
+    font-size: var(--small-size);
+}
+
+.reveal table th {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: var(--space-sm);
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+.reveal table td {
+    padding: var(--space-sm);
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.reveal table tbody tr:nth-child(even) {
+    background: var(--powder-blue);
+}
+
+.reveal table tbody tr:nth-child(odd) {
+    background: var(--white);
+}
+
+/* ===== EMPHASIS ===== */
+.reveal strong,
+.reveal b {
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.reveal em {
+    font-style: italic;
+}
+
+.reveal .small-text {
+    font-size: var(--small-size);
+    color: var(--medium-gray);
+}
+
+.reveal .note {
+    font-size: var(--small-size);
+    color: var(--medium-gray);
+    text-align: center;
+    margin-top: var(--space-md);
+}
+
+/* ===== FRAGMENT ANIMATIONS ===== */
+.reveal .fragment {
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+}
+
+.reveal .fragment.visible {
+    opacity: 1;
+}
+
+/* ===== ICONS ===== */
+.reveal i.fas,
+.reveal i.far,
+.reveal i.fab {
+    color: var(--light-blue);
+    margin-right: var(--space-xs);
+}
+
+/* ===== STATUS INDICATORS ===== */
+.status-complete {
+    color: var(--success) !important;
+}
+
+.status-complete i {
+    color: var(--success) !important;
+}
+
+.status-progress {
+    color: var(--warning) !important;
+}
+
+.status-progress i {
+    color: var(--warning) !important;
+}
+
+.status-upcoming {
+    color: var(--medium-gray) !important;
+}
+
+.status-upcoming i {
+    color: var(--medium-gray) !important;
+}
+
+/* ===== LINKS ===== */
+.reveal a {
+    color: var(--light-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.reveal a:hover {
+    color: var(--sky-blue);
+    text-decoration: underline;
+}
+
+/* ===== IMAGES ===== */
+.reveal img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== CODE (if needed) ===== */
+.reveal code {
+    font-family: 'Courier New', monospace;
+    background: var(--light-gray);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.reveal pre {
+    background: var(--light-gray);
+    padding: var(--space-md);
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.reveal pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* ===== SLIDE NUMBER (hidden - using custom progress bar) ===== */
+.reveal .slide-number {
+    display: none;
+}
+
+/* ===== CONTROLS ===== */
+.reveal .controls {
+    color: var(--primary-blue);
+}
+
+.reveal .controls button {
+    opacity: 0.6;
+}
+
+.reveal .controls button:hover {
+    opacity: 1;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 1280px) {
+    :root {
+        --h1-size: 50px;
+        --h2-size: 40px;
+        --h3-size: 30px;
+        --body-size: 24px;
+        --small-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --h1-size: 40px;
+        --h2-size: 32px;
+        --h3-size: 26px;
+        --body-size: 20px;
+        --small-size: 18px;
+    }
+    
+    .reveal .slides > section {
+        padding: var(--space-lg);
+    }
+}
